@@ -432,3 +432,9 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+function twentysixteen_scripts_styles() {
+    // Loads our main stylesheet.
+    wp_enqueue_style( 'twentysixteen-style', get_stylesheet_uri(), array(), '20181127' );
+}
+add_action( 'wp_enqueue_scripts', 'twentysixteen_scripts_styles' );
