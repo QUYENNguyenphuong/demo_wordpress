@@ -1,10 +1,10 @@
 <h1>Home page</h1>
 <hr>
 <form method="post" >
-<label> Name: </label>
-<input type="text" name="txtname" size="5">
-<br>
-<input type="submit" name="submit_name" value="Submit">
+    <label> Name: </label>
+    <input type="text" name="txtname" size="5">
+    <br>
+    <input type="submit" name="submit_name" value="Submit">
 </form>
 <br>
 <?php if(isset($_POST['submit_name'])): ?>
